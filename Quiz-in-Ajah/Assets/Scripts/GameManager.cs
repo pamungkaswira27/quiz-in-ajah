@@ -41,12 +41,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void MoveScene(int sceneIndex)
+    public void LoadLevel(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
     }
 
-    public void MoveScene(string sceneName)
+    public void LoadLevel(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }

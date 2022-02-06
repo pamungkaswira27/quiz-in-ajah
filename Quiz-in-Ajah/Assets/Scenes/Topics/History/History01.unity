@@ -526,7 +526,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 350331566}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveScene
+        m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1400,7 +1400,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 350331566}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveScene
+        m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2068,7 +2068,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 350331566}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveScene
+        m_MethodName: LoadLevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3402,33 +3402,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 903756537}
     m_Modifications:
     - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1589672072}
-    - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnAnswerSelected
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Quiz, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3017306153448366384, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3017306153448366390, guid: ee8fba6844ff22e459dd4510837689d3, type: 3}
       propertyPath: m_Name
       value: Answer Button (0)
