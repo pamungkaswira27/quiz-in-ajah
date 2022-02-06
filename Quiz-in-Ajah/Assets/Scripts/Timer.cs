@@ -21,6 +21,11 @@ public class Timer : MonoBehaviour
         timerValue = 0;
     }
 
+    public string GetTimerText()
+    {
+        return Mathf.RoundToInt(timerValue).ToString();
+    }
+
     void UpdateTimer()
     {
         timerValue -= Time.deltaTime;

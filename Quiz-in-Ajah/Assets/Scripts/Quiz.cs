@@ -21,6 +21,7 @@ public class Quiz : MonoBehaviour
 
     [Header("Timer")]
     [SerializeField] Image timerImage;
+    [SerializeField] TextMeshProUGUI timerText;
     Timer timer;
 
     [Header("Scoring")]
@@ -38,6 +39,7 @@ public class Quiz : MonoBehaviour
     void Update()
     {
         timerImage.fillAmount = timer.fillFraction;
+        timerText.text = timer.GetTimerText();
 
         if (timer.loadNextQuestion)
         {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,5 +39,15 @@ public class GameManager : MonoBehaviour
                 endScreen.gameObject.SetActive(true);
             }
         }
+    }
+
+    public void MoveScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void MoveScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

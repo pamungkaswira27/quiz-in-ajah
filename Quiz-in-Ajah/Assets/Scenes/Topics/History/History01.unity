@@ -523,7 +523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 146206277}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 350331566}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: History02
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &146206277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,7 +586,7 @@ GameObject:
   - component: {fileID: 167020019}
   - component: {fileID: 167020018}
   m_Layer: 5
-  m_Name: Timer Text
+  m_Name: Inner Timer Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,7 +662,7 @@ GameObject:
   - component: {fileID: 234197107}
   - component: {fileID: 234197106}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Timer Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1385,7 +1397,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 712440249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 350331566}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LevelSelect
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &712440249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2041,7 +2065,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1034052825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 350331566}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1034052825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2872,6 +2908,7 @@ MonoBehaviour:
   defaultButtonSprite: {fileID: 21300000, guid: cd5c5c6e32c1003439645e7e77b97d13, type: 3}
   correctButtonSprite: {fileID: 21300000, guid: 813976999e2cfe34694d28bc91e49b31, type: 3}
   timerImage: {fileID: 1344829400}
+  timerText: {fileID: 234197106}
   scoreText: {fileID: 68450691}
   isComplete: 0
 --- !u!1 &1607280402 stripped
