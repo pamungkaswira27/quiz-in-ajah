@@ -5,9 +5,11 @@ using System.Collections.Generic;
 
 public class LevelSelector : MonoBehaviour
 {
+    [Header("Menu Canvas")]
     [SerializeField] GameObject topicCanvas;
     [SerializeField] GameObject levelCanvas;
 
+    [Header("Level Buttons")]
     [SerializeField] List<Button> levelButtons = new List<Button>();
     [SerializeField] Color32 levelLocked = new Color32(150, 150, 150, 255);
 

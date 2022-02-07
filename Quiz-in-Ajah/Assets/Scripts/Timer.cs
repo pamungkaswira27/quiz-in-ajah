@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
+    [Header("Time Limit")]
     [SerializeField] float timeToAnswerQuestion = 15f;
     [SerializeField] float timeToShowCorrectAnswer = 5f;
 

@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
     EndScreen endScreen;
     ScoreKeeper scoreKeeper;
 
-    [SerializeField] int maxLevelAvailable = 5;
+    [Header("Current Level")]
+    [SerializeField] int currentLevel = 1;
 
     void Awake()
     {
@@ -35,18 +36,7 @@ public class GameManager : MonoBehaviour
                 quiz.gameObject.SetActive(false);
                 endScreen.gameObject.SetActive(true);
 
-                int currentUnlockLevel = PlayerPrefs.GetInt("levelReached");
-
-                if (currentUnlockLevel < maxLevelAvailable)
-                {
-                    PlayerPrefs.SetInt("levelReached", currentUnlockLevel + 1);
-                    gameObject.SetActive(false);
-                }
-                else
-                {
-                    PlayerPrefs.SetInt("levelReached", maxLevelAvailable);
-                    gameObject.SetActive(false);
-                }
+                PlayerPrefs.SetInt("levelReached", currentLevel + 1);
             }
             else
             {
