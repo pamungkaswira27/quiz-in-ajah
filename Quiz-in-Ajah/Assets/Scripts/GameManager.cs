@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     Quiz quiz;
     EndScreen endScreen;
     ScoreKeeper scoreKeeper;
+    PauseMenu pauseMenu;
 
     [Header("Current Level")]
     [SerializeField] int currentLevel = 1;
@@ -15,12 +16,14 @@ public class GameManager : MonoBehaviour
         quiz = FindObjectOfType<Quiz>();
         endScreen = FindObjectOfType<EndScreen>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     void Start()
     {
         quiz.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
+        pauseMenu.gameObject.SetActive(false);
 
         gameObject.SetActive(true);
     }
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
 }
