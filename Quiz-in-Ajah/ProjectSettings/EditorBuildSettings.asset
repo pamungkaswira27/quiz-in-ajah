@@ -14,16 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Topics/History/History01.unity
     guid: 78528eb33a1482f41aa567037560559b
-  - enabled: 1
-    path: Assets/Scenes/Topics/History/History02.unity
-    guid: e6166327dc0edf34e9a161b9020911a6
-  - enabled: 1
-    path: Assets/Scenes/Topics/History/History03.unity
-    guid: 1ffbb676dbd713743ad67d87c7447487
-  - enabled: 1
-    path: Assets/Scenes/Topics/History/History04.unity
-    guid: 851b1fff04aada84b87908d997f2e141
-  - enabled: 1
-    path: Assets/Scenes/Topics/History/History05.unity
-    guid: fa0447dd59829a14985fdc532a60c5de
   m_configObjects: {}

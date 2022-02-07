@@ -9,12 +9,17 @@ public class EndScreen : MonoBehaviour
     [SerializeField] TMP_ColorGradient winConditionGradient;
     [SerializeField] TMP_ColorGradient loseConditionGradient;
 
+    [SerializeField] GameObject nextLevelButton;
+    [SerializeField] GameObject restartButton;
+
     public void WinCondition()
     {
         conditionsTitle.text = "CONGRATULATIONS !";
         gameConditionsText.text = "YOU WIN !";
 
         gameConditionsText.colorGradientPreset = winConditionGradient;
+        nextLevelButton.SetActive(true);
+        restartButton.SetActive(false);
     }
 
     public void LoseCondition()
@@ -23,5 +28,7 @@ public class EndScreen : MonoBehaviour
         gameConditionsText.text = "YOU LOSE !";
 
         gameConditionsText.colorGradientPreset = loseConditionGradient;
+        nextLevelButton.SetActive(false);
+        restartButton.SetActive(true);
     }
 }
