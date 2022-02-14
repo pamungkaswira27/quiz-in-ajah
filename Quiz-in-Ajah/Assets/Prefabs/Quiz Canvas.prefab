@@ -416,6 +416,8 @@ MonoBehaviour:
   timerImage: {fileID: 4414774591373579703}
   timerText: {fileID: 4414774592407859741}
   scoreText: {fileID: 4414774592242064364}
+  correctFeedback: {fileID: 0}
+  wrongFeedback: {fileID: 0}
   isComplete: 0
 --- !u!1 &4414774591617763811
 GameObject:

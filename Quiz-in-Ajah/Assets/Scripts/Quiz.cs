@@ -28,6 +28,10 @@ public class Quiz : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     ScoreKeeper scoreKeeper;
 
+    [Header("Feedback")]
+    [SerializeField] GameObject correctFeedback;
+    [SerializeField] GameObject wrongFeedback;
+
     public bool isComplete;
 
     void Awake()
@@ -108,6 +112,9 @@ public class Quiz : MonoBehaviour
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
             buttonText.text = currentQuestion.GetAnswer(i);
         }
+
+        correctFeedback.SetActive(false);
+        wrongFeedback.SetActive(false);
     }
 
     void DisplayAnswer(int index)
@@ -116,6 +123,8 @@ public class Quiz : MonoBehaviour
 
         if (index == currentQuestion.GetCorrectAnswerIndex())
         {
+            correctFeedback.SetActive(true);
+
             buttonImage = answerButtons[index].GetComponent<Image>();
             buttonImage.sprite = correctButtonSprite;
 
@@ -124,6 +133,8 @@ public class Quiz : MonoBehaviour
         }
         else
         {
+            wrongFeedback.SetActive(true);
+
             correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
 
             buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
