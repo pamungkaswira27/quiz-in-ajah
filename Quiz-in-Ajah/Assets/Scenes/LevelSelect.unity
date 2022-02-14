@@ -2721,6 +2721,7 @@ MonoBehaviour:
   levelLocked:
     serializedVersion: 2
     rgba: 4288059030
+  dataController: {fileID: 5128302405454003353, guid: 987744343e2032246bd3b4b49e254187, type: 3}
 --- !u!1 &2147061345
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     ScoreKeeper scoreKeeper;
     PauseMenu pauseMenu;
 
+    [Header("Data Controller")]
+    [SerializeField] DataController dataController;
+
     [Header("Current Level")]
     [SerializeField] int currentLevel = 1;
 
@@ -39,7 +42,7 @@ public class GameManager : MonoBehaviour
                 quiz.gameObject.SetActive(false);
                 endScreen.gameObject.SetActive(true);
 
-                PlayerPrefs.SetInt("levelReached", currentLevel + 1);
+                dataController.SaveLevelReached(currentLevel);
             }
             else
             {

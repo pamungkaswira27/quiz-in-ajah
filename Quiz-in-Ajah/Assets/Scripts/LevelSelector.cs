@@ -13,12 +13,15 @@ public class LevelSelector : MonoBehaviour
     [SerializeField] List<Button> levelButtons = new List<Button>();
     [SerializeField] Color32 levelLocked = new Color32(150, 150, 150, 255);
 
+    [Header("Data Controller")]
+    [SerializeField] DataController dataController;
+
     void Start()
     {
         topicCanvas.SetActive(true);
         levelCanvas.SetActive(false);
 
-        int levelReached = PlayerPrefs.GetInt("levelReached", 1);
+        int levelReached = dataController.LoadLevelReached();
 
         for (int i = 0; i < levelButtons.Count; i++)
         {
