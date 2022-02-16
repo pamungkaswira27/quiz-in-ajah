@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     EndScreen endScreen;
     ScoreKeeper scoreKeeper;
     PauseMenu pauseMenu;
+    AudioManager audioManager;
 
     [Header("Data Controller")]
     [SerializeField] DataController dataController;
@@ -20,10 +21,14 @@ public class GameManager : MonoBehaviour
         endScreen = FindObjectOfType<EndScreen>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
         pauseMenu = FindObjectOfType<PauseMenu>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void Start()
     {
+        audioManager.PlayAudio("GameplayBGM");
+        audioManager.StopAudio("MenuBGM");
+
         quiz.gameObject.SetActive(true);
         endScreen.gameObject.SetActive(false);
         pauseMenu.gameObject.SetActive(false);
