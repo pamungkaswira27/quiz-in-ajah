@@ -1,9 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
     AudioManager audioManager;
+
+    [SerializeField] DataController dataController;
+    [SerializeField] Slider volumeSlider;
 
     void Awake()
     {
@@ -14,6 +18,8 @@ public class MainMenu : MonoBehaviour
     {
         audioManager.PlayAudio("MenuBGM");
         audioManager.StopAudio("GameplayBGM");
+
+        volumeSlider.value = dataController.LoadVolumeSettings();
     }
 
     public void StartGame()

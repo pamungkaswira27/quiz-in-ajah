@@ -3033,7 +3033,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5128302405454003353, guid: 987744343e2032246bd3b4b49e254187, type: 3}
+        m_TargetAssemblyTypeName: DataController, Assembly-CSharp
+        m_MethodName: SaveVolumeSettings
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1867471626
 GameObject:
   m_ObjectHideFlags: 0
@@ -3359,6 +3371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5afaa711c8f826d45972120ddb800285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dataController: {fileID: 5128302405454003353, guid: 987744343e2032246bd3b4b49e254187, type: 3}
+  volumeSlider: {fileID: 1862144268}
 --- !u!1 &1963288155
 GameObject:
   m_ObjectHideFlags: 0
