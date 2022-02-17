@@ -34,13 +34,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayAudio(string bgmName)
+    public void PlayAudio(string audioName)
     {
-        Sound sound = Array.Find(sounds, sound => sound.name == bgmName);
+        Sound sound = Array.Find(sounds, sound => sound.name == audioName);
 
         if (sound == null)
         {
-            Debug.LogWarning("Audio with name " + bgmName + " is not found");
+            Debug.LogWarning("Audio with name " + audioName + " is not found");
             return;
         }
 
@@ -50,13 +50,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void StopAudio(string bgmName)
+    public void StopAudio(string audioName)
     {
-        Sound sound = Array.Find(sounds, sound => sound.name == bgmName);
+        Sound sound = Array.Find(sounds, sound => sound.name == audioName);
 
         if (sound == null)
         {
-            Debug.LogWarning("Audio with name " + bgmName + " is not found");
+            Debug.LogWarning("Audio with name " + audioName + " is not found");
             return;
         }
 

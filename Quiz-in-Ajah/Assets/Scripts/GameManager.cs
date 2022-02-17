@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         {
             if (scoreKeeper.GetCorrectAnswers() >= 4)
             {
+                //audioManager.PlayAudio("WinSFX");
                 endScreen.WinCondition();
 
                 quiz.gameObject.SetActive(false);
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                //audioManager.PlayAudio("LoseSFX");
                 endScreen.LoseCondition();
 
                 quiz.gameObject.SetActive(false);

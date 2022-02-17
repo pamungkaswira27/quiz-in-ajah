@@ -57,19 +57,31 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: CorrectSFX
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 82557f0cb6378af408ceb08088aca5dc, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: WrongSFX
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 0abd885e6f75043489af6480cbbf7055, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: ClickSFX
     clip: {fileID: 8300000, guid: c7a46bd96b6be85469c4dd273accd58a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WinSFX
+    clip: {fileID: 8300000, guid: 64ba04093f180864c837ed40ee2ff889, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LoseSFX
+    clip: {fileID: 8300000, guid: f13a71cd434917b499744e9a2d11ee06, type: 3}
     volume: 1
     pitch: 1
     loop: 0
