@@ -32,15 +32,12 @@ public class Quiz : MonoBehaviour
     [SerializeField] GameObject correctFeedback;
     [SerializeField] GameObject wrongFeedback;
 
-    AudioManager audioManager;
-
     public bool isComplete;
 
     void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        audioManager = FindObjectOfType<AudioManager>();
     }
 
     void Update()
@@ -126,7 +123,7 @@ public class Quiz : MonoBehaviour
 
         if (index == currentQuestion.GetCorrectAnswerIndex())
         {
-            audioManager.PlayAudio("CorrectSFX");
+            AudioManager.instance.PlayAudio("CorrectSFX");
             correctFeedback.SetActive(true);
 
             buttonImage = answerButtons[index].GetComponent<Image>();
@@ -137,7 +134,7 @@ public class Quiz : MonoBehaviour
         }
         else
         {
-            audioManager.PlayAudio("WrongSFX");
+            AudioManager.instance.PlayAudio("WrongSFX");
             wrongFeedback.SetActive(true);
 
             correctAnswerIndex = currentQuestion.GetCorrectAnswerIndex();
